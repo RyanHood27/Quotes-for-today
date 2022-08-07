@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5daa8eb347.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2>Quotes For Today</h2>
+    </header>
+
+    <main>
+      <div class="quote-box">
+        <div class="quote">
+          <i class="fa-solid fa-quote-left"></i>
+
+          <p class="js-quote">
+            What doesn't kill you, makes you stronger. Slow down men at work!
+          </p>
+
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+
+        <div class="author">
+          <span>__</span>
+          <span class="name"> Ryan Hood </span>
+        </div>
+      </div>
+
+      <!-- Loading spinner -->
+      <div id="js-spinner" class="spinner hidden">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+
+      <div class="button-box">
+        <ul>
+          <li class="js-copy">
+            <i class="fa-solid fa-copy"></i>
+            <span class="tooltip"> Copy text </span>
+          </li>
+          <li class="js-volume">
+            <i class="fa-solid fa-volume-high"></i>
+            <span class="tooltip">Text to speech</span>
+          </li>
+        </ul>
+
+        <button>
+          Generate
+          <i class="fa-solid fa-arrow-pointer"></i>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
