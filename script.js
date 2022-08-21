@@ -6,7 +6,9 @@ const quote = document.querySelector(".js-quote"),
   generateBtn = document.querySelector("button"),
   randomQuoteAPI = "https://api.quotable.io/random";
 
-const fetchRandomQuote = async () => {
+generateBtn.addEventListener("click", fetchRandomQuote);
+
+async function fetchRandomQuote() {
   spinner.classList.remove("hidden");
   generateBtn.classList.add("loading");
 
@@ -24,9 +26,7 @@ const fetchRandomQuote = async () => {
     spinner.classList.add("hidden");
     generateBtn.classList.remove("loading");
   }
-};
-
-generateBtn.addEventListener("click", fetchRandomQuote);
+}
 
 copyBtn.addEventListener("click", () => {
   navigator.clipboard.writeText(quote.textContent);
